@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portfolio Simone</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="fonts/icomoon.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- script
+    ================================================== -->
+  <script src="js/modernizr.js"></script>
+</head>
+
+<body class="bg-dark">
+  <header id="header">
+    <nav class="navbar navbar-expand-lg padding-small px-lg-4">
+      <div class="container-fluid ">
+
+        <div class="main-logo">
+          <a href="index.html">
+            <img src="images/main-logo.gif" alt="logo">
+          </a>
+        </div>
+
+        <button class="navbar-toggler mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body ">
+            <div class="main-menu text-center d-lg-flex align-items-center">
+              <ul class="menu-list list-unstyled d-lg-flex m-0">
+                <li class="menu-item">
+                  <a href="index.html" class="item-anchor" data-effect="Home">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="marketing.html" class="item-anchor" data-effect="Blogs">Marketing</a>
+                </li>
+                <li class="menu-item">
+                  <a href="followers.html" class="item-anchor" data-effect="Shop">Followers</a>
+                </li>
+                <li class="menu-item">
+                  <a href="developer.html" class="item-anchor" data-effect="Blogs">Developer</a>
+                </li>
+                <li class="menu-item dropdown">
+                   <a class="item-anchor dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false" href="#">Pages</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="about.html" class="dropdown-item fw-light">About Me<span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="articles.html" class="dropdown-item fw-light">Articles <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="marketing.html" class="dropdown-item fw-light">Marketing <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="developer.html" class="dropdown-item fw-light">Development <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="followers.html" class="dropdown-item fw-light">Followers <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="cv.html" class="dropdown-item fw-light">Curriculum<span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="wallet.html" class="dropdown-item fw-light">Wallet <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="contact.html" class="dropdown-item fw-light">Contact <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="faq.html" class="dropdown-item fw-light">FAQs <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="calendario.html" class="dropdown-item fw-light">Calendly <span
+                          class="badge bg-secondary"></span></a></li>
+                  </ul>
+                </li>
+                <li class="menu-item ">
+                 <a href="contact.html" class="item-anchor"><b>Contact Me</b></a>
+               </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="pattern-blur">
+    <div class="pattern-overlay left-side-pattern">
+      <img src="images/pattern-blur-left.png">
+    </div>
+    <div class="container ">
+      <h2 class="section-title light text-center my-5 pt-5">Explore Metrics and Projects</h2>
+      <div class="offset-md-3 col-12 col-md-6">
+        <form id="form" class="d-flex justify-content-between bg-blue-trans  text-center rounded-pill p-2">
+        <input type="text" name="email" placeholder="Search your items here..."
+          class="content-dim-light mb-0 bg-transparent border-0 w-100">
+        <iconify-icon icon="ion:search" class="search-icon align-self-center pe-2"></iconify-icon>
+      </form>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="explore">
+    <div class="container ">
+      <div class="py-4 my-4 ">
+
+        <div class="mb-4">
+          <p class="text-center">
+            <button class="filter-button px-4 py-1 me-2 mb-2 border-0 active" data-filter="*">All</button>
+            <button class="filter-button px-4 py-1 me-2 mb-2 border-0" data-filter=".wall">Writting</button>
+            <button class="filter-button px-4 py-1 me-2 mb-2 border-0" data-filter=".game">Digital Marketing</button>
+            <button class="filter-button px-4 py-1 me-2 mb-2 border-0" data-filter=".character">SEO</button>
+            <button class="filter-button px-4 py-1 me-2 mb-2 border-0" data-filter=".art">Email Marketing</button>
+            <button class="filter-button px-4 py-1 me-2 mb-2 border-0" data-filter=".paint">Paid ADS</button>
+            <button class="filter-button px-4 py-1 me-2 mb-2 border-0" data-filter=".other">Editorial Calendar</button>
+          </p>
+        </div>
+
+
+        <div id="product-card" class="isotope-container row ">
+          <div class="item wall col-md-4 my-5 ">
+            <div class="product-item position-relative my-5">
+              <div class="image-holder">
+                <img src="images/square10m.JPG" alt="collection" class="rounded-shape">
+              </div>
+              <div class="shop-product-detail bg-light">
+                <div class="card-header d-flex flex-wrap justify-content-between">
+                  <h3 class="card-title">50k Followers + 10 Million Views Binance Square</h3>
+                  <span class="currency"></span>
+                </div>
+                <div class="clients-detail">
+                  <img src="images/clients-item1.png" alt="clients" class="circle-shape">
+                  <span class="clients-name">Si_Angel</span>
+                </div>
+                 <div class="btn-card">
+                    <a 
+                      href="https://app.binance.com/uni-qr/cpro/Si_Angel?l=en&r=192566793&uc=web_square_share_link&us=copylink" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-linear btn-full btn-rounded btn-medium"
+                           >
+                        See channel
+                         </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="item wall col-md-4 my-5 ">
+            <div class="product-item position-relative my-5">
+              <div class="image-holder">
+                <img src="images/marketing.gif" alt="collection" class="rounded-shape">
+              </div>
+              <div class="shop-product-detail bg-light">
+                <div class="card-header d-flex flex-wrap justify-content-between">
+                  <h3 class="card-title">130k+ Community and 500k Views on CMC</h3>
+                  <span class="currency"></span>
+                </div>
+                <div class="clients-detail">
+                  <img src="images/clients-item3.jpg" alt="clients" class="circle-shape">
+                  <span class="clients-name">Coinmarketcap</span>
+                </div>
+                <div class="btn-card">
+                    <a 
+                      href="https://coinmarketcap.com/community/profile/mayainatsume_nkek9y/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-linear btn-full btn-rounded btn-medium"
+                           >
+                        See channel
+                         </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="item game col-md-4 my-5 ">
+            <div class="product-item position-relative my-5">
+              <div class="image-holder">
+                <img src="images/tweitters2.JPG" alt="collection" class="rounded-shape">
+              </div>
+              <div class="shop-product-detail bg-light">
+                <div class="card-header d-flex flex-wrap justify-content-between">
+                  <h3 class="card-title">Twitter Campaingns/Education/Kol Collaboration</h3>
+                  <span class="currency"></span>
+                </div>
+                <div class="clients-detail">
+                  <img src="images/clients-item1.png" alt="clients" class="circle-shape">
+                  <span class="clients-name">@Si_Angel_Crypto </span>
+                </div>
+                <div class="btn-card">
+                    <a 
+                      href="https://x.com/Si_Angel_Crypto" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-linear btn-full btn-rounded btn-medium"
+                           >
+                        See channel
+                         </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="item character col-md-4 my-5 ">
+            <div class="product-item position-relative my-5">
+              <div class="image-holder">
+                <img src="images/seo2.png" alt="collection" class="rounded-shape">
+              </div>
+              <div class="shop-product-detail bg-light">
+                <div class="card-header d-flex flex-wrap justify-content-between">
+                  <h3 class="card-title">Breaks down a step-by-step SEO strategy</h3>
+                  <span class="currency"></span>
+                </div>
+                <div class="clients-detail">
+                  <img src="images/clients-item3.jpg" alt="clients" class="circle-shape">
+                  <span class="clients-name">@Sim0neAng3l</span>
+                </div>
+                <div class="btn-card">
+                    <a 
+                      href="https://t.me/Sim0neAng3l" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-linear btn-full btn-rounded btn-medium"
+                           >
+                        See channel
+                         </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="item game col-md-4 my-5 ">
+            <div class="product-item position-relative my-5">
+              <div class="image-holder">
+                <img src="images/DigiMarket.png" alt="collection" class="rounded-shape">
+              </div>
+              <div class="shop-product-detail bg-light">
+                <div class="card-header d-flex flex-wrap justify-content-between">
+                  <h3 class="card-title">Digital Marketing</h3>
+                  <span class="currency"></span>
+                </div>
+                <div class="clients-detail">
+                  <img src="images/clients-item3.jpg" alt="clients" class="circle-shape">
+                  <span class="clients-name">@Sim0neAng3l</span>
+                </div>
+               <div class="btn-card">
+                    <a 
+                      href="https://t.me/Sim0neAng3l" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-linear btn-full btn-rounded btn-medium"
+                           >
+                        See channel
+                         </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="item character col-md-4 my-5 ">
+            <div class="product-item position-relative my-5">
+              <div class="image-holder">
+                <img src="images/seo1.JPG" alt="collection" class="rounded-shape">
+              </div>
+              <div class="shop-product-detail bg-light">
+                <div class="card-header d-flex flex-wrap justify-content-between">
+                  <h3 class="card-title">SEO On-Page Process </h3>
+                  <span class="currency"></span>
+                </div>
+                <div class="clients-detail">
+                  <img src="images/clients-item3.jpg" alt="clients" class="circle-shape">
+                  <span class="clients-name">@Sim0neAng3l</span>
+                </div>
+                <div class="btn-card">
+                    <a 
+                      href="https://t.me/Sim0neAng3l" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-linear btn-full btn-rounded btn-medium"
+                           >
+                        See channel
+                         </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="item art col-md-4 my-5 ">
+            <div class="product-item position-relative my-5">
+              <div class="image-holder">
+                <img src="images/email markeing.png" alt="collection" class="rounded-shape">
+              </div>
+              <div class="shop-product-detail bg-light">
+                <div class="card-header d-flex flex-wrap justify-content-between">
+                  <h3 class="card-title">Email marketing Funnels and Tools</h3>
+                  <span class="currency"></span>
+                </div>
+                <div class="clients-detail">
+                  <img src="images/clients-item1.png" alt="clients" class="circle-shape">
+                  <span class="clients-name">@Sim0neAng3l</span>
+                </div>
+                <div class="btn-card">
+                    <a 
+                      href="https://t.me/Sim0neAng3l" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-linear btn-full btn-rounded btn-medium"
+                           >
+                        See channel
+                         </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="item paint col-md-4 my-5 ">
+            <div class="product-item position-relative my-5">
+              <div class="image-holder">
+                <img src="images/Paid Ads.png" alt="collection" class="rounded-shape">
+              </div>
+              <div class="shop-product-detail bg-light">
+                <div class="card-header d-flex flex-wrap justify-content-between">
+                  <h3 class="card-title">PAID ADS</h3>
+                  <span class="currency"></span>
+                </div>
+                <div class="clients-detail">
+                  <img src="images/clients-item1.png" alt="clients" class="circle-shape">
+                  <span class="clients-name">@Sim0neAng3l</span>
+                </div>
+               <div class="btn-card">
+                    <a 
+                      href="https://t.me/Sim0neAng3l" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-linear btn-full btn-rounded btn-medium"
+                           >
+                        See channel
+                         </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="item other col-md-4 my-5 ">
+            <div class="product-item position-relative my-5">
+              <div class="image-holder">
+                <img src="images/Editorial Calendar.png" alt="collection" class="rounded-shape">
+              </div>
+              <div class="shop-product-detail bg-light">
+                <div class="card-header d-flex flex-wrap justify-content-between">
+                  <h3 class="card-title">Editorial Calendar Q1</h3>
+                  <span class="currency"></span>
+                </div>
+                <div class="clients-detail">
+                  <img src="images/clients-item3.jpg" alt="clients" class="circle-shape">
+                  <span class="clients-name">@Sim0neAng3l</span>
+                </div>
+                <div class="btn-card">
+                    <a 
+                      href="https://t.me/Sim0neAng3l" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-linear btn-full btn-rounded btn-medium"
+                           >
+                        See channel
+                         </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav aria-label="Page navigation" class="d-flex justify-content-center mt-5 pt-5">
+          <ul class="pagination">
+            <li class="page-item mx-2">
+              <a class="page-link" href="#" aria-label="Previous">
+                <iconify-icon icon="ic:baseline-keyboard-arrow-left" class="pagination-arrow"></iconify-icon>
+              </a>
+            </li>
+            <li class="page-item mx-2 active" aria-current="page"><a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item mx-2"><a class="page-link" href="#">2</a></li>
+            <li class="page-item mx-2"><a class="page-link" href="#">3</a></li>
+            <li class="page-item mx-2">
+              <a class="page-link active" href="#" aria-label="Next">
+                <iconify-icon icon="ic:baseline-keyboard-arrow-right" class="pagination-arrow"></iconify-icon> </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="padding-large pattern-blur">
+    <div class="pattern-overlay pattern-blur-footer right-side-pattern">
+      <img src="images/footer-pattern.png">
+    </div>
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-item item-001">
+            <img src="images/main-logo.gif" alt="logo">
+            <p>As a hardworking, passionate professional, I combine creativity and code to craft impactful digital experiences across industries. 
+              Stay connected for insights, updates, and tools that make a difference.</p>
+             <div class="social-media">
+          <ul class="d-flex list-unstyled">
+             <li class="bg-blue-trans border-rounded-circle">
+              <a href="https://github.com/mayanatsume" target="_blank">
+               <img src="images/github-icon.png" alt="GitHub" width="24" height="24">
+             </a>
+            </li>
+              <li class="bg-blue-trans border-rounded-circle">
+              <a href="https://x.com/Si_Angel_Crypto" target="_blank">
+              <i class="icon icon-twitter"></i>
+             </a>
+             </li>
+           <li class="bg-blue-trans border-rounded-circle">
+           <a href="https://www.youtube.com/@mayainatsume" target="_blank">
+           <i class="icon icon-youtube"></i>
+          </a>
+          </li>
+             <li class="bg-blue-trans border-rounded-circle">
+             <a href="https://www.linkedin.com/in/simone-g-b674891b3/" target="_blank">
+             <i class="icon icon-linkedin"></i>
+             </a>
+                 </li>
+                <li class="bg-blue-trans border-rounded-circle">
+                  <a href="mailto:simone.dev@europe.com" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F59E42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="14" rx="3" />
+                     <polyline points="3,7 12,13 21,7" />
+                         </svg>
+                             </a>
+                                </li>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  <hr>
+  <div id="footer-bottom">
+    <div class="container">
+      <div class="row text-center">
+       <p>© 2025 Copyright - Simone Portifolio All rights
+                    reserved </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>

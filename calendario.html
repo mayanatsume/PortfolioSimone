@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Schedule a Meeting - Simone</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="fonts/icomoon.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="js/modernizr.js"></script>
+  <style>
+    .highlight-frame {
+      border: 3px solid;
+      border-image: linear-gradient(45deg, #ff6a00, #ffc400);
+      border-image-slice: 1;
+      padding: 20px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.03);
+      box-shadow: 0 0 20px rgba(255, 153, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-dark">
+
+  <!-- Header -->
+  <header id="header">
+    <nav class="navbar navbar-expand-lg padding-small px-lg-4">
+      <div class="container-fluid">
+        <div class="main-logo">
+          <a href="index.html">
+            <img src="images/main-logo.gif" alt="logo">
+          </a>
+        </div>
+        <button class="navbar-toggler mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+          <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white">Menu</h5>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="main-menu text-center d-lg-flex align-items-center">
+              <ul class="menu-list list-unstyled d-lg-flex m-0">
+                <li class="menu-item"><a href="index.html" class="item-anchor">Home</a></li>
+                <li class="menu-item"><a href="marketing.html" class="item-anchor">Marketing</a></li>
+                <li class="menu-item"><a href="followers.html" class="item-anchor">Followers</a></li>
+                <li class="menu-item"><a href="developer.html" class="item-anchor">Developer</a></li>
+                <li class="menu-item dropdown">
+                  <a class="item-anchor dropdown-toggle" data-bs-toggle="dropdown" href="#">Pages</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="about.html" class="dropdown-item">About Me</a></li>
+                    <li><a href="articles.html" class="dropdown-item">Articles</a></li>
+                    <li><a href="marketing.html" class="dropdown-item">Marketing</a></li>
+                    <li><a href="developer.html" class="dropdown-item">Development</a></li>
+                    <li><a href="followers.html" class="dropdown-item">Followers</a></li>
+                    <li><a href="cv.html" class="dropdown-item">Curriculum</a></li>
+                    <li><a href="wallet.html" class="dropdown-item">Wallet</a></li>
+                    <li><a href="contact.html" class="dropdown-item">Contact</a></li>
+                    <li><a href="faq.html" class="dropdown-item">FAQs</a></li>
+                    <li><a href="calendario.html" class="dropdown-item">Calendly</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="contact.html" class="item-anchor"><b>Contact Me</b></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Calendly Embed -->
+  <section id="booking" class="padding-medium pt-0 text-center">
+    <div class="container">
+      <h3 class="block-title mb-3">Schedule a Meeting</h3>
+      <p class="mb-4">Choose the best time to discuss your project or collaboration opportunity. (Wait 5 seconds to open calendly)</p>
+      <div class="highlight-frame">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/simone-dev"
+          style="min-width:320px;height:700px;border:none;">
+        </div>
+      </div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="padding-large pattern-blur">
+    <div class="pattern-overlay pattern-blur-footer right-side-pattern">
+      <img src="images/footer-pattern.png">
+    </div>
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-item item-001">
+            <img src="images/main-logo.gif" alt="logo">
+            <p>As a hardworking, passionate professional, I combine creativity and code to craft impactful digital experiences across industries. Stay connected for insights, updates, and tools that make a difference.</p>
+           <div class="social-media">
+          <ul class="d-flex list-unstyled">
+             <li class="bg-blue-trans border-rounded-circle">
+              <a href="https://github.com/mayanatsume" target="_blank">
+               <img src="images/github-icon.png" alt="GitHub" width="24" height="24">
+             </a>
+            </li>
+              <li class="bg-blue-trans border-rounded-circle">
+              <a href="https://x.com/Si_Angel_Crypto" target="_blank">
+              <i class="icon icon-twitter"></i>
+             </a>
+             </li>
+           <li class="bg-blue-trans border-rounded-circle">
+           <a href="https://www.youtube.com/@mayainatsume" target="_blank">
+           <i class="icon icon-youtube"></i>
+          </a>
+          </li>
+             <li class="bg-blue-trans border-rounded-circle">
+             <a href="https://www.linkedin.com/in/simone-g-b674891b3/" target="_blank">
+             <i class="icon icon-linkedin"></i>
+             </a>
+                 </li>
+            <li class="bg-blue-trans border-rounded-circle">
+               <a href="mailto:simone.dev@europe.com" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F59E42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                 <rect x="3" y="5" width="18" height="14" rx="3" />
+                   <polyline points="3,7 12,13 21,7" />
+                     </svg>
+                      </a>
+                                 </li>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  <hr>
+  <div id="footer-bottom">
+    <div class="container">
+      <div class="row text-center">
+        <p>&copy; 2025 Copyright Simone Portfolio All rights reserved</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

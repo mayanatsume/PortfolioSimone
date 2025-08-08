@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio Simone</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+</head>
+
+<body class="bg-dark">
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <defs>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="star-outline" viewBox="0 0 15 15">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    d="M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="star-solid" viewBox="0 0 15 15">
+                <path fill="currentColor"
+                    d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+            </symbol>
+        </defs>
+    </svg>
+
+    <header id="header">
+        <nav class="navbar navbar-expand-lg padding-small px-lg-4">
+          <div class="container-fluid ">
+    
+            <div class="main-logo">
+              <a href="index.html">
+                <img src="images/main-logo.gif" alt="logo">
+              </a>
+            </div>
+    
+            <button class="navbar-toggler mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body ">
+                <div class="main-menu text-center d-lg-flex align-items-center">
+                  <ul class="menu-list list-unstyled d-lg-flex m-0">
+                    <li class="menu-item">
+                      <a href="index.html" class="item-anchor" data-effect="Home">Home</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="marketing.html" class="item-anchor" data-effect="Blogs">Marketing</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="followers.html" class="item-anchor" data-effect="Shop">Followers</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="developer.html" class="item-anchor" data-effect="Blogs">Developer</a>
+                    </li>
+                    <li class="menu-item dropdown">
+                      <a class="item-anchor dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false" href="#">Pages</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="about.html" class="dropdown-item fw-light">About Me<span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="articles.html" class="dropdown-item fw-light">Articles <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="marketing.html" class="dropdown-item fw-light">Marketing <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="developer.html" class="dropdown-item fw-light">Development <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="followers.html" class="dropdown-item fw-light">Followers <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="cv.html" class="dropdown-item fw-light">Curriculum<span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="wallet.html" class="dropdown-item fw-light">Wallet <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="contact.html" class="dropdown-item fw-light">Contact <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="faq.html" class="dropdown-item fw-light">FAQs <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="calendario.html" class="dropdown-item fw-light">Calendly <span
+                          class="badge bg-secondary"></span></a></li>
+                      </ul>
+                    </li>
+                     <li class="menu-item ">
+                     <a href="contact.html" class="item-anchor"><b>Contact Me</b></a>
+                     </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </nav>
+      </header>
+
+    <section id="hero">
+        <div class="container ">
+            <div class="product-detail text-center my-5 pt-5">
+                <div class="clients-detail">
+                    <img src="images/clients-item1.png" alt="clients" class="circle-shape profile-img">
+                </div>
+                <h3 class="block-title m-0">Simone Gonçalves</h3>
+                <p>@Sim0neAng3l</p>
+
+                <div class="d-flex flex-wrap justify-content-center">
+    <a href="https://wa.me/351911718847" target="_blank" class="mx-2">
+        <iconify-icon icon="mdi:whatsapp" class="profile-icon bg-blue-trans rounded-circle p-3"></iconify-icon>
+    </a>
+    <a href="https://t.me/Sim0neAng3l" target="_blank" class="mx-2">
+        <iconify-icon icon="mdi:telegram" class="profile-icon bg-blue-trans rounded-circle p-3"></iconify-icon>
+    </a>
+    <a href="mailto:simone.dev@europe.com" class="mx-2">
+        <iconify-icon icon="mdi:email-outline" class="profile-icon bg-blue-trans rounded-circle p-3"></iconify-icon>
+    </a>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="pattern" class="pattern-blur">
+        <div class="pattern-overlay pattern-blur-left left-side-pattern">
+            <img src="images/pattern-blur-left.png">
+        </div>
+    </section>
+
+    <section class="product-tabs mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="tabs-listing">
+                    <nav>
+                        <div class="nav nav-tabs d-flex justify-content-center no-border-bottom" id="nav-tab" role="tablist">
+                         <button class="nav-link active fw-bold px-4 py-3" id="nav-home-tab" data-bs-toggle="tab"
+                          data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                          aria-selected="true">Details</button>
+                          <button class="nav-link fw-bold px-4 py-3" id="nav-information-tab" data-bs-toggle="tab"
+                           data-bs-target="#nav-information" type="button" role="tab"
+                           aria-controls="nav-information" aria-selected="false">About</button>
+                    </div>
+                    </nav>
+                    <div class="tab-content rounded-3 p-lg-5" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div class="row mt-5 pt-5">
+                                <div class="col-md-3">
+                                    <select class="form-select border-0 bg-black text-white m-0"
+                                        aria-label="Default select example">
+                                        <option selected>Sort by All</option>
+                                        <option value="1" class="">Latest</option>
+                                        <option value="2" class="">Oldest</option>
+                                        <option value="3" class="">Top Viewed</option>
+                                        <option value="4" class="">Best Seller</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                         <div id="product-card" class="row">
+    <div class="col-md-4 my-4">
+    <div class="product-item position-relative my-5">
+        <div class="image-holder">
+            <img src="images/cvenglish.png" alt="collection" class="rounded-shape">
+        </div>
+        <div class="shop-product-detail bg-light">
+            <div class="card-header d-flex flex-wrap justify-content-between">
+                <h3 class="card-title">General CV</h3>
+                <span class="currency"></span>
+            </div>
+            <div class="clients-detail">
+                <img src="images/clients-item1.png" alt="clients" class="circle-shape">
+                <span class="clients-name"></span>
+            </div>
+            <div class="btn-card">
+                <a href="images/CVEnglish.pdf" download="CurriculumSimoneEnglish.pdf" class="btn btn-linear btn-full btn-rounded btn-medium">
+                    Download
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 my-4">
+    <div class="product-item position-relative my-5">
+        <div class="image-holder">
+            <img src="images/cv community.png" alt="collection" class="rounded-shape">
+        </div>
+        <div class="shop-product-detail bg-light">
+            <div class="card-header d-flex flex-wrap justify-content-between">
+                <h3 class="card-title">Community CV</h3>
+                <span class="currency"></span>
+            </div>
+            <div class="clients-detail">
+                <img src="images/clients-item1.png" alt="clients" class="circle-shape">
+                <span class="clients-name"></span>
+            </div>
+            <div class="btn-card">
+                <a href="images/CVCommunity.pdf" download="Simone_Portfolio2.pdf" class="btn btn-linear btn-full btn-rounded btn-medium">
+                    Download
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 my-4">
+    <div class="product-item position-relative my-5">
+        <div class="image-holder">
+            <img src="images/portfolioimage.png" alt="collection" class="rounded-shape">
+        </div>
+        <div class="shop-product-detail bg-light">
+            <div class="card-header d-flex flex-wrap justify-content-between">
+                <h3 class="card-title">Portfolio</h3>
+                <span class="currency"></span>
+            </div>
+            <div class="clients-detail">
+                <img src="images/clients-item1.png" alt="clients" class="circle-shape">
+                <span class="clients-name"></span>
+            </div>
+            <div class="btn-card">
+                <a href="images/PortfolioSimone.pdf" download="Simone_Portfolio2.pdf" class="btn btn-linear btn-full btn-rounded btn-medium">
+                    Download
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+                       </div>
+                       </div>
+<div class="tab-pane fade" id="nav-information" role="tabpanel"
+                            aria-labelledby="nav-information-tab">
+                            <h3 class="text-light">About</h3>
+                            <p>On this page, you’ll find three downloadable files that offer a deeper look into my background and work: </p>
+
+                            <div class="row mt-5">
+                                <div class="col-md-6 pe-5">
+                                    <h4 class="text-light">General CV</h4>
+
+                                    <p>A complete overview of my professional path, including technical skills in front-end and back-end development, my education in Marketing and Computer Engineering,
+                                         and experiences managing online projects. It reflects how I combine creativity, tech knowledge, and strategy in everything I do.</p>                                  
+                                </div>
+                                 <div class="row mt-5">
+                                <div class="col-md-6 pe-5">
+                                    <h4 class="text-light">Community CV</h4>
+
+                                    <p>This version highlights my journey in the Web3 space as a community builder and educator. It covers years of experience creating content, 
+                                        moderating large communities, organizing AMAs, and growing engagement across platforms like Discord, Telegram, and Twitter/X.</p>                                  
+                                </div>
+                                <div class="col-md-6 ">
+                                    <h4 class="text-light">Portfolio</h4>
+
+                                    <p>A visual presentation of my impact. You’ll see snapshots of key achievements, including my published articles with over 200K views, community events, 
+                                        developer tools I’ve built, and moments like live AMAs with CZ and other leaders in the crypto space.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
+                            <div class="row">
+                                <div class="col-md-6 my-3">
+
+                                    <div class="row g-4">
+                                        <div class="col-md-3">
+                                            <div class="image-holder">
+                                                <img src="images/clients-item-lg2.jpg" alt="review"
+                                                    class="rounded-circle img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="review-content">
+                                                <div class="rating-container d-flex align-items-center">
+                                                    <div class="rating" data-rating="1" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-solid"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="2" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-solid"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="3" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-solid"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="4" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-outline"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="5" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-outline"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <span class="rating-count">(3.5)</span>
+                                                </div>
+                                                <div class="review-header">
+                                                    <span class="author-name">Tom Johnson</span>
+                                                    <span class="review-date">– 07/05/2022</span>
+                                                </div>
+                                                <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at
+                                                    lectus urna duis convallis
+                                                    convallis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 my-3">
+
+                                    <div class="row g-4">
+                                        <div class="col-md-3">
+                                            <div class="image-holder">
+                                                <img src="images/clients-item-lg3.jpg" alt="review"
+                                                    class="rounded-circle img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="review-content">
+                                                <div class="rating-container d-flex align-items-center">
+                                                    <div class="rating" data-rating="1" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-solid"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="2" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-solid"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="3" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-solid"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="4" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-outline"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="5" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-outline"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <span class="rating-count">(3.5)</span>
+                                                </div>
+                                                <div class="review-header">
+                                                    <span class="author-name">Jenny Willis</span>
+                                                    <span class="review-date">– 07/05/2022</span>
+                                                </div>
+                                                <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at
+                                                    lectus urna duis convallis
+                                                    convallis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 my-3">
+
+                                    <div class="row g-4">
+                                        <div class="col-md-3">
+                                            <div class="image-holder">
+                                                <img src="images/clients-item-lg3.jpg" alt="review"
+                                                    class="rounded-circle img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="review-content">
+                                                <div class="rating-container d-flex align-items-center">
+                                                    <div class="rating" data-rating="1" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-solid"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="2" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-solid"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="3" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-solid"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="4" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-outline"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="5" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-outline"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <span class="rating-count">(3.5)</span>
+                                                </div>
+                                                <div class="review-header">
+                                                    <span class="author-name">Tom Johnson</span>
+                                                    <span class="review-date">– 07/05/2022</span>
+                                                </div>
+                                                <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at
+                                                    lectus urna duis convallis
+                                                    convallis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 my-3">
+
+                                    <div class="row g-4">
+                                        <div class="col-md-3">
+                                            <div class="image-holder">
+                                                <img src="images/clients-item-lg4.jpg" alt="review"
+                                                    class="rounded-circle img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="review-content">
+                                                <div class="rating-container d-flex align-items-center">
+                                                    <div class="rating" data-rating="1" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-solid"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="2" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-solid"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="3" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-solid"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="4" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-outline"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating" data-rating="5" onclick="rate(1)">
+                                                        <svg width="32" height="32">
+                                                            <use xlink:href="#star-outline"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <span class="rating-count">(3.5)</span>
+                                                </div>
+                                                <div class="review-header">
+                                                    <span class="author-name">Jenny Willis</span>
+                                                    <span class="review-date">– 07/05/2022</span>
+                                                </div>
+                                                <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at
+                                                    lectus urna duis convallis
+                                                    convallis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer" class="padding-large pattern-blur">
+        <div class="pattern-overlay pattern-blur-footer right-side-pattern">
+            <img src="images/footer-pattern.png">
+        </div>
+        <div class="container">
+            <div class="row d-flex flex-wrap justify-content-between">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-item item-001">
+                        <img src="images/main-logo.gif" alt="logo">
+                        <p>As a hardworking, passionate professional, I combine creativity and code to craft impactful digital experiences across industries. 
+              Stay connected for insights, updates, and tools that make a difference.</p>
+                          <div class="social-media">
+          <ul class="d-flex list-unstyled">
+             <li class="bg-blue-trans border-rounded-circle">
+              <a href="https://github.com/mayanatsume" target="_blank">
+               <img src="images/github-icon.png" alt="GitHub" width="24" height="24">
+             </a>
+            </li>
+              <li class="bg-blue-trans border-rounded-circle">
+              <a href="https://x.com/Si_Angel_Crypto" target="_blank">
+              <i class="icon icon-twitter"></i>
+             </a>
+             </li>
+           <li class="bg-blue-trans border-rounded-circle">
+           <a href="https://www.youtube.com/@mayainatsume" target="_blank">
+           <i class="icon icon-youtube"></i>
+          </a>
+          </li>
+             <li class="bg-blue-trans border-rounded-circle">
+             <a href="https://www.linkedin.com/in/simone-g-b674891b3/" target="_blank">
+             <i class="icon icon-linkedin"></i>
+             </a>
+                 </li>
+            <li class="bg-blue-trans border-rounded-circle">
+              <a href="mailto:simone.dev@europe.com" target="_blank">
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F59E42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                 <rect x="3" y="5" width="18" height="14" rx="3" />
+              <polyline points="3,7 12,13 21,7" />
+                </svg>
+                    </a>
+                           </li>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <hr>
+    <div id="footer-bottom">
+        <div class="container">
+            <div class="row text-center">
+               <p>© 2025 Copyright - Simone Portifolio All rights
+                    reserved </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>

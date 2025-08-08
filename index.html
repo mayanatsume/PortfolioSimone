@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio Simone</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="fonts/icomoon.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <script src="js/modernizr.js"></script>
+
+  <style>
+    .neon-img-border {
+      border: 3px solid;
+      border-image: linear-gradient(90deg, #FFA500, #FFD700) 1;
+      border-radius: 0;
+      background: transparent;
+      display: block;
+      margin: 40px auto;
+      width: 100%; /* Alterado para evitar conflito com Swiper */
+      max-width: 400px; /* Mantém limite máximo */
+      height: auto; /* Alterado para evitar conflito com Swiper */
+      padding: 0;
+      box-shadow:
+        0 0 16px 0 #3e06a066,
+        0 0 38px 0 #c084fc33;
+      animation: neonGlowPulse 2.2s infinite alternate;
+      transition: box-shadow 0.2s;
+    }
+
+    @keyframes neonGlowPulse {
+      0% {
+        box-shadow:
+          0 0 6px 0 #b388ff66,
+          0 0 18px 0 #c084fc44;
+      }
+      100% {
+        box-shadow:
+          0 0 26px 2px #671ce9cc,
+          0 0 52px 12px #c084fc99;
+      }
+    }
+
+    .neon-img-border:hover {
+      box-shadow:
+        0 0 36px 4px #b388ffcc,
+        0 0 88px 24px #c084fcbb;
+    }
+
+    .neon-img-border img {
+      width: 100%;
+      display: block;
+      border-radius: 0;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body class="bg-dark">
+  <header id="header">
+    <nav class="navbar navbar-expand-lg padding-small px-lg-4">
+      <div class="container-fluid">
+        <div class="main-logo">
+          <a href="index.html">
+            <img src="images/main-logo.gif" alt="logo">
+          </a>
+        </div>
+        <button class="navbar-toggler mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="main-menu text-center d-lg-flex align-items-center">
+              <ul class="menu-list list-unstyled d-lg-flex m-0">
+                <li class="menu-item">
+                  <a href="index.html" class="item-anchor active" data-effect="Home">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="marketing.html" class="item-anchor" data-effect="Blogs">Marketing</a>
+                </li>
+                <li class="menu-item">
+                  <a href="followers.html" class="item-anchor" data-effect="Shop">Followers</a>
+                </li>
+                <li class="menu-item">
+                  <a href="developer.html" class="item-anchor" data-effect="Blogs">Developer</a>
+                </li>
+                <li class="menu-item dropdown">
+                  <a class="item-anchor dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="about.html" class="dropdown-item fw-light">About Me<span class="badge bg-secondary"></span></a></li>
+                    <li><a href="articles.html" class="dropdown-item fw-light">Articles <span class="badge bg-secondary"></span></a></li>
+                    <li><a href="marketing.html" class="dropdown-item fw-light">Marketing <span class="badge bg-secondary"></span></a></li>
+                    <li><a href="developer.html" class="dropdown-item fw-light">Development <span class="badge bg-secondary"></span></a></li>
+                    <li><a href="followers.html" class="dropdown-item fw-light">Followers <span class="badge bg-secondary"></span></a></li>
+                    <li><a href="cv.html" class="dropdown-item fw-light">Curriculum<span class="badge bg-secondary"></span></a></li>
+                    <li><a href="wallet.html" class="dropdown-item fw-light">Wallet <span class="badge bg-secondary"></span></a></li>
+                    <li><a href="contact.html" class="dropdown-item fw-light">Contact <span class="badge bg-secondary"></span></a></li>
+                    <li><a href="faq.html" class="dropdown-item fw-light">FAQs <span class="badge bg-secondary"></span></a></li>
+                    <li><a href="calendario.html" class="dropdown-item fw-light">Calendly <span class="badge bg-secondary"></span></a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="contact.html" class="item-anchor"><b>Contact Me</b></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="billboard" class="padding-large overflow-hidden">
+    <div class="container">
+      <div class="row d-flex flex-wrap align-items-center">
+        <div class="col-md-7 col-sm-8">
+          <div class="banner-content content-light m-0 mt-5 mt-md-0">
+            <h1 class="banner-title m-0">Simone - Portfolio</h1>
+            <p class="grey">Crypto Educator | Web3 Content Creator | Community Growth Specialist | Developer</p>
+            <div class="btn-wrap d-flex flex-wrap">
+              <a href="marketing.html" class="btn btn-linear btn-medium mt-3">Marketing Portfolio</a>
+              <a href="developer.html" class="btn btn-outline-linear btn-medium mt-3">Developer Portfolio</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-8">
+          <div class="image-holder">
+            <img src="images/banner-image.png" alt="banner" class="banner-image img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="association-with" class="padding-large pt-5 pattern-blur">
+    <div class="pattern-overlay left-side-pattern">
+      <img src="images/pattern-blur-left.png">
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-auto d-flex justify-content-center">
+          <img src="images/association-brand1.png" alt="brand" class="img-fluid" style="max-width: 1500px; width: 100%;">
+        </div>
+      </div>
+    </div>
+    <div style="height: 64px;"></div>
+  </section>
+
+  <section id="product-card" class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="section-header text-center">
+          <h2 class="section-title light">Achievements</h2>
+        </div>
+        <div class="swiper product-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder neon-img-border">
+                  <img src="images/gifslide1.gif" alt="collection" class="rounded-shape">
+                </div>
+                <div class="product-detail bg-light">
+                  <div class="card-header d-flex flex-wrap justify-content-between">
+                    <h3 class="card-title">10 million Views on Articles - 50k Followers - 2 Times Writer Of the year</h3>
+                    <span class="currency"></span>
+                  </div>
+                  <div class="clients-detail">
+                    <img src="images/clients-item1.png" alt="clients" class="circle-shape">
+                    <span class="clients-name">Si_Angel</span>
+                  </div>
+                  <div class="btn-card">
+                    <a href="https://app.binance.com/uni-qr/cpro/Si_Angel?l=en&r=192566793&uc=app_square_share_link&us=copylink" class="btn btn-linear btn-full btn-rounded btn-medium" target="_blank">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder neon-img-border">
+                  <img src="images/gif slide2.gif" alt="collection" class="rounded-shape">
+                </div>
+                <div class="product-detail bg-light">
+                  <div class="card-header d-flex flex-wrap justify-content-between">
+                    <h3 class="card-title">Followed by Top Crypto Voices in Main Crypto Communities</h3>
+                    <span class="currency"></span>
+                  </div>
+                  <div class="clients-detail">
+                    <img src="images/clients-item1.png" alt="clients" class="circle-shape">
+                    <span class="clients-name">@Si_Angel_Crypto</span>
+                  </div>
+                  <div class="btn-card">
+                    <a href="https://x.com/Si_Angel_Crypto" class="btn btn-linear btn-full btn-rounded btn-medium" target="_blank">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder neon-img-border">
+                  <img src="images/gif slide3.gif" alt="collection" class="rounded-shape">
+                </div>
+                <div class="product-detail bg-light">
+                  <div class="card-header d-flex flex-wrap justify-content-between">
+                    <h3 class="card-title">SEO/Email Marketing/Editorial Calendar Metrics</h3>
+                    <span class="currency"></span>
+                  </div>
+                  <div class="clients-detail">
+                    <img src="images/clients-item3.jpg" alt="clients" class="circle-shape">
+                    <span class="clients-name">Si_Angel</span>
+                  </div>
+                  <div class="btn-card">
+                    <a href="marketing.html" class="btn btn-linear btn-full btn-rounded btn-medium">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder neon-img-border">
+                  <img src="images/gif slide4.gif" alt="collection" class="rounded-shape">
+                </div>
+                <div class="product-detail bg-light">
+                  <div class="card-header d-flex flex-wrap justify-content-between">
+                    <h3 class="card-title">Over 100k Interactions and 100k Likes on Social Media Channels this Year</h3>
+                    <span class="currency"></span>
+                  </div>
+                  <div class="clients-detail">
+                    <img src="images/clients-item1.png" alt="clients" class="circle-shape">
+                    <span class="clients-name">Si_Angel</span>
+                  </div>
+                  <div class="btn-card">
+                    <a href="https://x.com/Si_Angel_Crypto" class="btn btn-linear btn-full btn-rounded btn-medium" target="_blank">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+ <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder neon-img-border">
+                  <img src="images/gif slide5.gif" alt="collection" class="rounded-shape">
+                </div>
+                <div class="product-detail bg-light">
+                  <div class="card-header d-flex flex-wrap justify-content-between">
+                    <h3 class="card-title">12 AMAs and Meet Ups with over 300 attendees</h3>
+                    <span class="currency"></span>
+                  </div>
+                  <div class="clients-detail">
+                    <img src="images/clients-item3.jpg" alt="clients" class="circle-shape">
+                    <span class="clients-name">Si_Angel</span>
+                  </div>
+                  <div class="btn-card">
+                    <a href="marketing.html" class="btn btn-linear btn-full btn-rounded btn-medium">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder neon-img-border">
+                  <img src="images/gif slide6.gif" alt="collection" class="rounded-shape">
+                </div>
+                <div class="product-detail bg-light">
+                  <div class="card-header d-flex flex-wrap justify-content-between">
+                    <h3 class="card-title">Moderating Communities with over 30k users</h3>
+                    <span class="currency"></span>
+                  </div>
+                  <div class="clients-detail">
+                    <img src="images/clients-item3.jpg" alt="clients" class="circle-shape">
+                    <span class="clients-name">Si_Angel</span>
+                  </div>
+                  <div class="btn-card">
+                    <a href="marketing.html" class="btn btn-linear btn-full btn-rounded btn-medium">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="subscribe" class="pattern-circle">
+    <div class="pattern-overlay">
+      <img src="images/pattern-overlay.png" alt="pattern-overlay">
+    </div>
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-center">
+        <div class="col-md-6">
+          <div class="image-holder">
+            <img src="images/single-image.jpg" alt="single image" class="banner-image">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="subscribe-content">
+            <div class="subscribe-header">
+              <h3 class="subscribe-title light">Subscribe And get Latest news update about NFTs.</h3>
+              <p>Explore a collection of my web2 and web3 projects. Here you’ll find practical solutions, creative experiments,</p>
+            </div>
+            <form id="form" class="d-flex justify-content-between bg-blue-trans rounded-3">
+              <input type="text" name="email" placeholder="Write your email here"
+                class="btn-rounded w-100 content-dim-light align-self-center bg-transparent border-0">
+              <button class="btn btn-linear btn-medium rounded-0">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nft-collection" class="padding-large">
+    <div class="container">
+      <div class="row overflow-hidden">
+        <div class="section-header align-center">
+          <h2 class="section-title light">Dev Portfolio</h2>
+          <p>Explore a collection of my web2 and web3 projects. Here you’ll find practical solutions and creative experiments.</p>
+        </div>
+        <div class="product-content">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded-pill">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/codigo1.JPG" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Telegram Mini App/ Game (Html/Css/JS)</h3>
+                  <div class="btn-card">
+                    <a href="https://github.com/mayanatsume/Telegram_Mini_Game_Crypto" class="view-btn" target="_blank">Code /</a>
+                    <a href="https://mayanatsume.github.io/Telegram_Mini_Game_Crypto/" class="view-btn" target="_blank">Live</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded-pill">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/codigo2.jfif" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Crypto Portfolio Manager/ Predictor (Python/Tkinter)</h3>
+                  <div class="btn-card">
+                    <a href="https://github.com/mayanatsume/CryptoPortfolioManager" class="view-btn" target="_blank">Live</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded-pill">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/codigo3.JPG" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Movie Recommendation System (C# .NET OpenCV)</h3>
+                  <div class="btn-card">
+                    <a href="https://github.com/mayanatsume/Movie-Recommendation-System" class="view-btn" target="_blank">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded-pill">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/codigo4.png" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Auto Repair Shop (Java, JavaFx, Ocaml, Prolog, CSS)</h3>
+                  <div class="btn-card">
+                    <a href="https://github.com/mayanatsume/Auto-Repair-Shop" class="view-btn" target="_blank">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="padding-large">
+    <div class="container">
+      <div class="row overflow-hidden">
+        <div class="section-header d-md-flex justify-content-between">
+          <h2 class="section-title light">Latest Video Blog</h2>
+        </div>
+        <div class="product-content">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3">
+                <div class="product-detail">
+                  <div class="clients-detail">
+                    <a href="blog-single.html">
+                      <div class="media-box">
+                        <video src="images/presentation1.MP4"
+                               autoplay loop muted playsinline
+                               style="width:100%; height:100%; object-fit:cover; border-radius:12px 12px 0 0; background:#181028; display:block;">
+                        </video>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="btn-card">
+                    <a href="blog-single.html" class="view-btn">Watch</a>
+                  </div>
+                  <a href="blog-single.html">
+                    <h3 class="block-title">What Are DAOs? Want Understand?</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3">
+                <div class="product-detail">
+                  <div class="clients-detail">
+                    <a href="blog-single.html">
+                      <div class="media-box">
+                        <video src="images/nft-item2.mp4"
+                               autoplay loop muted playsinline
+                               style="width:100%; height:100%; object-fit:cover; border-radius:12px 12px 0 0; background:#181028; display:block;">
+                        </video>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="btn-card">
+                    <a href="blog-single.html" class="view-btn">Watch</a>
+                  </div>
+                  <a href="blog-single.html">
+                    <h3 class="block-title">What are Fake Tokens?</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3">
+                <div class="product-detail">
+                  <div class="clients-detail">
+                    <a href="blog-single.html">
+                      <div class="media-box">
+                        <img src="images/nft-item3.jpg" alt="clients" style="width:100%; height:100%; object-fit:cover; border-radius:12px 12px 0 0; background:#181028; display:block;">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="btn-card">
+                    <a href="blog-single.html" class="view-btn">Watch</a>
+                  </div>
+                  <a href="blog-single.html">
+                    <h3 class="block-title">What is Zero-Knowledge?</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3">
+                <div class="product-detail">
+                  <div class="clients-detail">
+                    <a href="blog-single.html">
+                      <div class="media-box">
+                        <img src="images/nft-item4.jpg" alt="clients" style="width:100%; height:100%; object-fit:cover; border-radius:12px 12px 0 0; background:#181028; display:block;">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="btn-card">
+                    <a href="blog-single.html" class="view-btn">Watch</a>
+                  </div>
+                  <a href="blog-single.html">
+                    <h3 class="block-title">CEX vs DEX: What’s the Difference?</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="padding-large pattern-blur">
+    <div class="pattern-overlay pattern-blur-footer right-side-pattern">
+      <img src="images/footer-pattern.png">
+    </div>
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-item item-001">
+            <img src="images/main-logo.gif" alt="logo">
+            <p>As a hardworking, passionate professional, I combine creativity and code to craft impactful digital experiences across industries. Stay connected for insights, updates, and tools that make a difference.</p>
+            <div class="social-media">
+              <ul class="d-flex list-unstyled">
+                <li class="bg-blue-trans border-rounded-circle">
+                  <a href="https://github.com/mayanatsume" target="_blank">
+                    <img src="images/github-icon.png" alt="GitHub" width="24" height="24">
+                  </a>
+                </li>
+                <li class="bg-blue-trans border-rounded-circle">
+                  <a href="https://x.com/Si_Angel_Crypto" target="_blank">
+                    <i class="icon icon-twitter"></i>
+                  </a>
+                </li>
+                <li class="bg-blue-trans border-rounded-circle">
+                  <a href="https://www.youtube.com/@mayainatsume" target="_blank">
+                    <i class="icon icon-youtube"></i>
+                  </a>
+                </li>
+                <li class="bg-blue-trans border-rounded-circle">
+                  <a href="https://www.linkedin.com/in/simone-g-b674891b3/" target="_blank">
+                    <i class="icon icon-linkedin"></i>
+                  </a>
+                </li>
+                <li class="bg-blue-trans border-rounded-circle">
+                  <a href="mailto:simone.dev@europe.com" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F59E42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="5" width="18" height="14" rx="3" />
+                      <polyline points="3,7 12,13 21,7" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <hr>
+  <div id="footer-bottom">
+    <div class="container">
+      <div class="row text-center">
+        <p>© 2025 Copyright - Simone Portifolio All rights reserved</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <!-- Inicialização explícita do Swiper -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.product-swiper', {
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+      spaceBetween: 20,
+      loop: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '"></span>';
+        }
+      },
+      breakpoints: {
+        320: { slidesPerView: 1, slidesPerGroup: 1, spaceBetween: 10 },
+        768: { slidesPerView: 2, slidesPerGroup: 1, spaceBetween: 15 },
+        1024: { slidesPerView: 3, slidesPerGroup: 1, spaceBetween: 20 },
+      }
+    });
+
+    swiper.on('slideChange', function () {
+      let active = swiper.activeIndex;
+      let bullets = document.querySelectorAll('.swiper-pagination-bullet');
+      bullets.forEach(b => b.classList.remove('swiper-pagination-bullet-active'));
+      if (bullets[active]) bullets[active].classList.add('swiper-pagination-bullet-active');
+    });
+
+    // Clique em cada bolinha para ir direto ao slide correspondente
+    setTimeout(function() {
+      document.querySelectorAll('.swiper-pagination-bullet').forEach((el, idx) => {
+        el.addEventListener('click', function () {
+          swiper.slideTo(idx);
+        });
+      });
+    }, 200);
+  });
+</script>
+
+</body>
+</html>
